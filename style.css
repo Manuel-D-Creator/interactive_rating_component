@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: var(--very_dark_blue);
+}
+
+:root{
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light_grey: hsl(217, 12%, 63%);
+    --dark_blue: hsl(213, 19%, 18%);
+    --very_dark_blue: hsl(216, 12%, 8%);
+}
+.container{
+    background: var(--dark_blue);
+    color: var(--white);
+    width: 25%;
+}
+p{
+    color: var(--light_grey);
+    font-size: 0.9rem;
+}
+.star{
+    width: 50px;
+    height: 50px;
+    background: hwb(217 58% 33% / 0.088);
+}
+.rating{
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    color: var(--light_grey);
+    background: hwb(217 58% 33% / 0.088);
+}
+.rating.selected{
+    background: var(--white);
+    color: var(--dark_blue);
+}
+.rating:hover{
+    color: var(--dark_blue);
+    background: var(--orange);
+    cursor: pointer;
+}
+
+.btn{
+    background: var(--orange);
+    color: var(--very_dark_blue);
+    font-weight: 600;
+    font-size: 1rem;
+}
+.btn:hover{
+    background: var(--white);
+    color: var(--dark_blue);
+}
+
+.appreciation_text{
+    font-size: 0.9rem;
+    color: var(--light_grey);
+}
+
+
+.img_txt{
+    background: hwb(217 58% 33% / 0.088);
+    color: var(--orange);
+}
+
+.message{
+    display: none;
+}
+.alert{
+    transform: translateY(-200%);
+    transition: 0.5s ease-in;
+}
+.main{
+    margin-top: -0.5rem;
+    display: block;
+}
+
+@media (max-width: 490px) {
+    .container{
+        width: 80%;
+        margin-top: -0.5rem;
+    }
+}
+@media (min-width: 491px) and (max-width:768px){
+    .container{
+        width: 70%;
+    }
+}
+@media (min-width: 769px) and (max-width:1200px){
+    .container{
+        width: 50%;
+    }
+}
