@@ -7,7 +7,7 @@
 
 .env
 design/
-style-guide.md/
+.style-guide.md
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
